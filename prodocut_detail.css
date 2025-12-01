@@ -1,0 +1,106 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f5f7;
+}
+.navbar {
+  background-color: #2f6893;
+}
+
+.navbar_logo img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+}
+.navbar_list .nav-link {
+  position: relative;
+  color: white;
+  padding-bottom: 3px;
+}
+.navbar_list .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  border-radius: 50px;
+  width: 0%;
+  background-color: rgb(198, 204, 22);
+  transition: width 0.8s ease;
+}
+.navbar_list .nav-link:hover::after {
+  width: 100%;
+}
+.navbar_list a:hover {
+  color: rgb(198, 204, 22);
+}
+.search {
+  position: relative;
+}
+.btn-search {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: gray;
+}
+.search input {
+  padding-left: 35px;
+}
+.search:has(input:focus) i {
+  color: rgb(198, 204, 22);
+}
+
+.slider {
+  width: 100%;
+  margin-top: 80px;
+}
+.slider img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.shape {
+  background: #2f6893;
+  height: 50px;
+  position: relative;
+  width: 250px;
+  margin-top: 20px;
+  color: white;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.shape::before {
+  background: #2f6893;
+  content: "";
+  height: 50px;
+  width: 20px;
+  position: absolute;
+  right: -10px;
+  transform: skew(20deg);
+}
+.card {
+  background: none;
+  border: none;
+}
+
+.card-img img {
+  height: 600px;
+  width: 100%;
+  object-fit: contain;
+}
+.sticky-col {
+  position: sticky !important;
+  top: 5px;
+  align-self: flex-start;
+}
+.btn-buynow {
+  width: 100px;
+}
+
